@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: postgres
+    schema: extracao
+    tables:
+      - name: cambio
+        description: "Tabela com dados da cotação das moedas"
+        columns:
+          - name: moeda
+            description: "Sigla da moeda"
+          - name: data
+            description: "Data da informacao"
+          - name:  paridade_compra
+            description: "Quanto para quanto"
+          - name:  paridade_venda
+            description: "Quanto para quanto"
+          - name:  cotacao_compra
+            description: "Cotacao da Compra"
+          - name:  cotacao_venda
+            description: "Cotacao da Venda"
+          - name:  data_hora_cotacao
+            description: "Data e hora da Cotacao"
+          - name:  tipo_boletim
+            description: "Tipo de boletim, somente fechamento"  
+      - name: moedas
+        description: "Tabela com informacoes sobre as moedas"
+        columns:
+          - name: simbolo
+            description: "Sigla da moeda"
+          - name: nome
+            description: "Nome da moeda por extenso"
+          - name: tipo_moeda
+            description: "A ou B"
+      - name: dados_transacoes
+        description: "Descricao das transacoes realizadas"
+        columns:
+          - name: data
+            description: "Data da transacao" 
+          - name: moeda
+            description: "Sigla da moeda" 
+          - name: acao
+            description: "Acao de venda ou compra" 
+          - name: quantidade
+            description: "Quantia de moeda comprada ou vendida" 

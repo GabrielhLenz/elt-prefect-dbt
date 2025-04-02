@@ -1,0 +1,12 @@
+data,moeda,acao,quantidade
+2025-03-23,JPY,venda,37
+2025-03-24,USD,compra,35
+2025-03-25,EUR,compra,34
+2025-03-26,JPY,venda,69
+2025-03-27,EUR,compra,44
+2025-03-28,GBP,compra,66
+2025-03-29,EUR,venda,25
+2025-03-30,GBP,compra,9
+2025-03-31,EUR,compra,46
+2025-04-01,JPY,compra,43
+2025-04-02,GBP,compra,55
