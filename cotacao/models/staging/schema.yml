@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: stg_cambio
+    description: "Stage com dados tratados da tabela 'cambio'"
+    columns:
+      - name: moeda
+        description: "Sigla da moeda"
+      - name: data
+        description: "Data convertida para tipo DATE"
+      - name: paridade_compra
+        description: "Paridade de compra"
+      - name: paridade_venda
+        description: "Paridade de venda"
+      - name: cotacao_compra
+        description: "Cotação para compra"
+      - name: cotacao_venda
+        description: "Cotação para venda"
+
+  - name: stg_dados_transacoes
+    description: "Stage com dados tratados da tabela 'dados_transacoes'"
+    columns:
+      - name: data
+        description: "Data da transação convertida para DATE"
+      - name: moeda
+        description: "Sigla da moeda"
+      - name: acao
+        description: "Ação (compra ou venda)"
+      - name: quantidade
+        description: "Quantidade convertida para INTEGER"
+
+  - name: stg_moedas
+    description: "Stage com os dados da tabela 'moedas'"
+    columns:
+      - name: simbolo
+        description: "Sigla da moeda"
+      - name: nome
+        description: "Nome completo da moeda"

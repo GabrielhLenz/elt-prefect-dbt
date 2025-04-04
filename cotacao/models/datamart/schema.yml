@@ -1,0 +1,20 @@
+models:
+  - name: dm_cambio
+    description: "Fato com o cálculo da receita por transação de moeda, considerando cotação de compra e venda"
+    columns:
+      - name: nome
+        description: "Nome completo da moeda"
+      - name: simbolo
+        description: "Símbolo ou sigla da moeda"
+      - name: data
+        description: "Data da transação"
+      - name: cotacao_venda
+        description: "Cotação de venda da moeda na data"
+      - name: cotacao_compra
+        description: "Cotação de compra da moeda na data"
+      - name: acao
+        description: "Tipo de transação realizada (compra ou venda)"
+      - name: quantidade
+        description: "Quantidade transacionada da moeda"
+      - name: receita
+        description: "Valor calculado da receita. Positiva para venda, negativa para compra"
